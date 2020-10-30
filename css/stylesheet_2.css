@@ -1,0 +1,309 @@
+/*menu bar*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+nav
+{  
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #000000;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li{
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+
+
+/*mobile properties start*/
+
+@media (max-width: 858px)
+{
+  nav .menu-btn i{
+    display: block;
+  }
+
+  
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+
+  
+  
+  .chammber
+  {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+}
+
+
+
+/*mobile properties ends */
+
+
+
+body
+{
+  font: 15px/ 1.5 arial;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4; 
+  
+}
+
+/*contact chamber*/
+
+
+
+
+#contat
+{
+  min-height: 500px;
+  background-image: url("../imag/Venues_and_Events_Int_247.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align:center;
+  background-color: #ffffff;
+}
+
+
+#contat h1
+{
+  padding-top: 58px;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+#contat p
+{
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/*contact details page description*/
+.contacct
+{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  background: url(../imag/wallpaperflare.com_wallpaper.jpg);
+  background-size: cover;
+}
+
+.chammber
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.chammber .contacctinfo
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.chammber .contacctinfo .boxx
+{
+  position: relative;
+  width: 100%;
+  padding: 15px 0;
+  display: flex; 
+}
+
+.chammber .contacctinfo .boxx .iccon
+{
+  min-width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; 
+  font-size: 22px;
+}
+
+.chammber .contacctinfo .boxx .texxt
+{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #ffffff; 
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.chammber .contacctinfo .boxx .texxt h3
+{
+  font-weight: 500;
+  color: #00bcd4;  
+}
+
+.chammber .contacctinfo .boxx .texxt p
+{
+  width: 100%;
+}
+
+.contactform
+{
+  width: 100%;
+  padding: 40px;
+  background: #ffffff; 
+}
+ 
+.contactform h2
+{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;  
+}
+
+.contactform .inputboxx
+{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactform .inputboxx input,
+.contactform .inputboxx textarea
+{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+
+.contactform .inputboxx input[type="submit"]
+{
+  width: 100px;
+  background: #000000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px; 
+}
+
+
+
+footer
+{
+  padding:20px;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+}
+
+
+.hidden
+{
+  visibility: hidden;
+  height: 0;
+}
