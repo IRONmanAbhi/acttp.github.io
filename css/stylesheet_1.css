@@ -168,8 +168,12 @@ input[type="checkbox"]{
   {
     float: none;
   }
+
   
-  
+  .vid
+  {
+    max-width: 330px;
+  }
   
 
 }
@@ -217,10 +221,8 @@ body
   padding: 0 40px;
 }
 
-.vid
-{
-  margin: 0 auto;
-}
+
+
 
 
 .button_1
