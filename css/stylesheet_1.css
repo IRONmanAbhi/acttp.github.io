@@ -449,6 +449,29 @@ footer
   margin-bottom: 30px;
 }
 
+.btnp
+{
+  display: inline-block;
+  width: 150px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #000;
+  color: #000;
+  border:none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.btn-outlinep
+{
+  background-color: transparent;
+  border: 1px #000 solid;
+  margin-bottom: 30px;
+}
+
 .btn:hover
 {
   transform: scale(.98);
