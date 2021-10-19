@@ -169,6 +169,12 @@ input[type="checkbox"]{
     float: none;
   }
   
+  .vid
+  {
+    align="center"; 
+    width="250";
+  }
+  
 
 }
 
@@ -215,6 +221,11 @@ body
   padding: 0 40px;
 }
 
+.vid
+{
+  align="center";
+  width="900";
+}
 
 
 .button_1
